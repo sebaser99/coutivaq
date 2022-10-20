@@ -1,14 +1,27 @@
-import { Box, Container } from "@mui/material";
-import { Navbar } from "./components/Navbar";
+import { NavbarC } from "./components/NavbarC";
+import { ThemeProvider } from '@mui/material';
+import { theme } from "./theme/theme";
 
+
+import './styles/index.css';
+import { Home } from "./views/Home";
+import { Nosotros } from "./views/Nosotros";
+import { Perfumes } from "./views/Perfumes";
+
+
+import { Routes, Route} from "react-router-dom";
 
 export const  CoutivaqApp = () => {
 
   return (
-    <Container maxWidth='lg'>
-      <Navbar />
-    </Container>
-  )
-}
+    <ThemeProvider theme={theme}>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/nosotros" element={<Nosotros/>} />
+        <Route path="/perfumes" element={<Perfumes/>} />
+      </Routes>
+      <NavbarC />
+    </ThemeProvider>
+)}
 
 
