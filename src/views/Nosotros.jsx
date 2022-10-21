@@ -1,6 +1,7 @@
+import Container from '@mui/material/Container';
 
 export const Nosotros = () => {
   return (
-    <div style={{position: 'absolute', top: '50%'}} >Nosotros</div>
+    <Container sx={{marginTop:{xs:'35vh', sm:'17vh'}}} >Nosotros</Container>
   )
 }

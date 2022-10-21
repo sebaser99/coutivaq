@@ -15,12 +15,12 @@ export const  CoutivaqApp = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <NavbarC />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/nosotros" element={<Nosotros/>} />
         <Route path="/perfumes" element={<Perfumes/>} />
       </Routes>
-      <NavbarC />
     </ThemeProvider>
 )}
 

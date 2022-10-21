@@ -1,6 +1,7 @@
+import Container from '@mui/material/Container';
 
 export const Perfumes = () => {
   return (
-    <div style={{position: 'absolute', top: '50%'}} >Perfumes</div>
+    <Container  sx={{marginTop:{xs:'35vh', sm:'17vh'}}} >Perfumes</Container>
   )
 }
