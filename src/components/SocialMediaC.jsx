@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export const SocialMediaC = () => {
   const icons = {color:'common.white', fontSize:'30px'}
   return (
-    <Box >
+    <Box sx={{display: 'flex', flexDirection: {xs: 'row', md: 'column'}, alignItems:'center', justifyContent:{xs:'center'}, marginTop:{xs: '50px', sm: '0'}}}>
       <Typography color='common.white' align='center'>Síguenos</Typography>
       <Box>
         <IconButton target="_blank" href='https://www.facebook.com/CautivatuesenciaSR/' ><FacebookIcon  sx={icons} /></IconButton> 

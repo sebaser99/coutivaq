@@ -7,7 +7,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 const routes = [{ruta:'/', nombre: 'Home'}, {ruta:'/nosotros', nombre: 'Nosotros'}, {ruta:'/perfumes', nombre: 'Perfumes'}, {ruta:'/contacto', nombre: 'Contáctenos'} ]
 
-export const MenuC = ({textColor='secondary'}) => {
+export const MenuC = ({textColor='secondary'} ) => {
     const [value, setValue] = useState(0);
     const matches = useMediaQuery('(min-width:600px)');
     return (
@@ -17,11 +17,11 @@ export const MenuC = ({textColor='secondary'}) => {
             indicatorColor={matches ? 'secondary' : ''}
             onChange={(e, value)=>setValue(value)}
             orientation={matches ? 'horizontal' : 'vertical'}
-            sx={{color:`${textColor}`}}
+            sx={{color:`${textColor}`, margin: {xs: '0 auto', md: '0'}}}
         >
         {
-            routes.map(({nombre, ruta}) =>(
-            <Tab label={nombre} component={Link}  to={ruta}/>
+            routes.map(({nombre, ruta}, i) =>(
+            <Tab label={nombre} component={Link} key={i}  to={ruta}/>
 
             ))
         }

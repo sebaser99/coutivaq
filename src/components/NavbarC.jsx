@@ -27,7 +27,7 @@ export const NavbarC = () => {
         <Toolbar sx={{display: 'flex', justifyContent:'center', alignItems: 'center',  background: 'linear-gradient(90deg, rgba(172,240,192,1) 0%, rgba(225,248,217,1) 30%, rgba(225,248,217,1) 70%, rgba(172,240,192,1) 100%)' }}  >
             <Box sx={{...menuStyle, width: '100%', maxWidth: '1040px', justifyContent: {sm: 'space-between'}, alignItems: {xs: 'left', sm:'center'} }} >
                 <Box  sx={{ padding: '10px 0 0' , width: {xs: 250, sm: 200 }}}>
-                    <img src='assets/img/logo-nombre.png' alt='logo' 
+                    <img src='https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631020/logo-nombre_jeplit.png' alt='logo' 
                     />
                 </Box>
               {

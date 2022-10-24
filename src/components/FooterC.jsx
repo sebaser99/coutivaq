@@ -10,13 +10,15 @@ const logoStyle ={
 export const FooterC = () => {
   return (
     <Box component='footer' sx={{ backgroundColor:'secondary.main', display: 'flex', flexDirection:'column', justifyContent:'end', paddingTop: 3}}>
-        <Container sx={{display:'flex', flexDirection:{xs:'column', sm: 'row'}, alignItems:{sm:'center'}, justifyContent:{sm: 'space-evenly'}}}>
-            <Box sx={logoStyle}><img style={{width:'50px'}} src='public/assets/img/logo-cara-hombre.png' alt='cara-hombre'/></Box>
-            <MenuC textColor='#fff'/>
-            <SocialMediaC/>
-            <Box sx={logoStyle}><img style={{width:'45px'}} src='public/assets/img/logo-cara-mujer.png' alt='cara-mujer'/></Box>
+        <Container sx={{display:'flex', flexDirection:{xs:'column', sm: 'row'}, alignItems:{sm:'center'}, justifyContent:{sm: 'space-between'}}}>
+            <Box sx={logoStyle}><img style={{width:'50px'}} src='https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631020/logo-cara-hombre_cykhad.png' alt='cara-hombre'/></Box>
+            <Box sx={{display: 'flex', flexDirection:{xs:'column', md: 'row', width:{xs:'auto',  md: '70%'}}}}>
+              <MenuC textColor='#fff'/>
+              <SocialMediaC/>
+            </Box>
+            <Box sx={logoStyle}><img style={{width:'45px'}} src='https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631020/logo-cara-mujer_ev1wwq.png' alt='cara-mujer'/></Box>
         </Container>
-        <Typography  sx={{marginTop:'10px'}} variant='subtitle2' color='#f6fbf4' align='center' component='p'><span style={{display:'block',padding:'10px 0', borderTop:'1px solid #fff', maxWidth:'6  0%', margin: '0 auto'}}>Coutivaq Perfumería <CopyrightIcon fontSize='14px'/></span></Typography>
+        <Typography  sx={{marginTop:'10px'}} variant='subtitle2' color='#f6fbf4' align='center' component='p'><span style={{display:'block',padding:'10px 0', borderTop:'1px solid #fff', maxWidth:'60%', margin: '0 auto'}}>Coutivaq Perfumería <CopyrightIcon fontSize='14px'/></span></Typography>
     </Box>
   )
 }

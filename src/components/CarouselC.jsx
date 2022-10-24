@@ -8,15 +8,15 @@ export const CarouselC = () => {
     let items = [
         {
             
-            image: 'assets/img/amberoud.jpg',
+            image: 'https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631701/amber_desdif.jpg',
             name: 'amber oud'
         },
         {
-            image: 'assets/img/cloud.jpg',
+            image: 'https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631701/cloud_ne1xlz.jpg',
             name: 'cloud '
         },
         {
-            image: 'assets/img/safron.jpg',
+            image: 'https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631701/safron_eppksa.jpg',
             name: 'saffron'
         }
     ]
