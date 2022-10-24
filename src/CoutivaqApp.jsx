@@ -19,10 +19,10 @@ export const  CoutivaqApp = () => {
     <ThemeProvider theme={theme}>
       <NavbarC />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/nosotros" element={<Nosotros/>} />
-        <Route path="/perfumes" element={<Perfumes/>} />
-        <Route path="/contacto" element={<Contacto/>} />
+        <Route path="/coutivaq/" element={<Home/>} />
+        <Route path="/coutivaq/nosotros" element={<Nosotros/>} />
+        <Route path="/coutivaq/perfumes" element={<Perfumes/>} />
+        <Route path="/coutivaq/contacto" element={<Contacto/>} />
       </Routes>
       <FooterC/>
     </ThemeProvider>
