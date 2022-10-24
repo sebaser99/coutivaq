@@ -8,7 +8,7 @@ export const CarouselC = () => {
     let items = [
         {
             
-            image: 'https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666631701/amber_desdif.jpg',
+            image: 'https://res.cloudinary.com/react-journal-sebaser/image/upload/v1666635989/amber_quzzod.jpg',
             name: 'amber oud'
         },
         {
