@@ -5,7 +5,7 @@ import Tab from "@mui/material/Tab";
 import { useState } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-const routes = [{ruta:'/', nombre: 'Home'}, {ruta:'/nosotros', nombre: 'Nosotros'}, {ruta:'/perfumes', nombre: 'Perfumes'}, {ruta:'/contacto', nombre: 'Contáctenos'} ]
+const routes = [{ruta:'/coutivaq/', nombre: 'Home'}, {ruta:'/coutivaq/nosotros', nombre: 'Nosotros'}, {ruta:'/coutivaq/perfumes', nombre: 'Perfumes'}, {ruta:'/coutivaq/contacto', nombre: 'Contáctenos'} ]
 
 export const MenuC = ({textColor='secondary'} ) => {
     const [value, setValue] = useState(0);

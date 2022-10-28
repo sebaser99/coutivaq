@@ -12,9 +12,13 @@ import { Perfumes } from "./views/Perfumes";
 import { Routes, Route} from "react-router-dom";
 import { Contacto } from "./views/Contacto";
 import { FooterC } from "./components/FooterC";
+import { useEffect } from "react";
+
+
 
 export const  CoutivaqApp = () => {
-
+  
+      
   return (
     <ThemeProvider theme={theme}>
       <NavbarC />

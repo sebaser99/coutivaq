@@ -14,7 +14,7 @@ export const DrawerC = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
 
-  const routes = [{ruta:'/', nombre: 'Home'}, {ruta:'/nosotros', nombre: 'Nosotros'}, {ruta:'/perfumes', nombre: 'Perfumes'} ]
+  const routes = [{ruta:'/coutivaq/', nombre: 'Home'}, {ruta:'/coutivaq/nosotros', nombre: 'Nosotros'}, {ruta:'/coutivaq/perfumes', nombre: 'Perfumes'}, {ruta:'/coutivaq/nosotros', nombre: 'Nosotros'}, {ruta:'/coutivaq/contacto', nombre: 'Contáctenos'} ]
   return (
     <>
       <Drawer open={openDrawer} sx={{display:{sm:'none'}}} onClose={()=> setOpenDrawer(false)}>
